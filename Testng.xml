@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name ="MavenTest" verbose="2">
+    <parameter name="browser" value="firefox" />
+    <parameter name="url" value="http://www.baidu.com" />
+    <parameter name="keyword" value="天气预报" />
+    <test name ="baiduTest" preserve-order="true">
+        <classes>
+            <class name="net.maven.demo.WebDriverDemoTest">
+                <methods preserve-order="true">
+                    <includ name="setupBrowser"/>
+                    <includ name="testSearch"/>
+                    <includ name="tearDown"/>
+                 </methods>
+    		</class>
+    	</classes>
+    </test>
+</suite>
